@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    text-align:center;
+    position: relative;
+    top: 95px;
+    left: 42%;
+    transform: translate(-50% ,-50%);
+    width: 100%;
+    
+}
+
+.container h1{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 61px;
+}
+
+.carousel-caption{
+    text-align: left;
+    width: 600px;
+    top: 35%;
+    height: fit-content;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.carousel-caption h5{
+    font-size: 5.25rem;
+}
+
+.card-img-top{
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+nav{
+    background-color: rgb(24, 24, 24);
+    display: grid;
+    place-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(196, 52, 52);
+    transition: 0.2s ease-in;
+    font-size: 20px;
+}
+
+nav ul a:hover{
+    background-color: rgb(65, 62, 62);
+    color:rgb(201, 34, 34);
+}
+
+.row{
+    padding: 13px;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        left: 51%;
+    }
+}

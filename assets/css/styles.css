@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.container{
+    text-align:center;
+    position: relative;
+    top: 95px;
+    left: 42%;
+    transform: translate(-50% ,-50%);
+    width: 100%;
+    
+}
+
+.container span{
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1{
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 20px;
+    background: rgb(177, 28, 28);
+    position: relative;
+    animation: text 3s 1;
+}
+
+.text2{
+    font-size: 30px;
+    color: rgb(250, 244, 244); 
+}
+
+@keyframes text{
+    0%{
+        color: rgb(241, 237, 237);
+        margin-bottom: -40px;   
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+}
+
+.section{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}   
+
+h4{
+    color: white;
+}
+
+.section h1{
+    text-align: center;
+    font-size: 4rem;
+    padding: 20px;
+    margin: 15px;
+    z-index: 1;
+}
+
+.item{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+h1{
+    text-align: center;
+    color: rgb(241, 237, 237);
+    padding: 20px;
+}
+
+nav{
+    background-color: rgb(24, 24, 24);
+    display: grid;
+    place-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-top: 0px;
+    margin-bottom: 0rem;
+}
+
+nav ul a{
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(196, 52, 52);
+    transition: 0.2s ease-in;
+    font-size: 20px;
+}
+
+nav ul a:hover{
+    background-color: rgb(65, 62, 62);
+    color:rgb(201, 34, 34);
+}
+
+.items{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 30px 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+}
+
+.item img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.item img:hover{
+    transform: scale(1.04);
+}
+
+.item h4{
+    padding: 5px;
+    text-align: center;
+}
+
+@media  screen and (max-width: 1000px){
+    .items{
+        grid-template-columns:repeat(2, 1fr);
+    }
+    
+}
+
+@media  screen and (max-width: 768px){
+    .items{
+        grid-template-columns:repeat(1, 1fr);
+    }    
+}
+
+body {
+    background-color: black;
+}
+
+#videoblock{
+    position: relative;
+    width: 97%;
+    height: 655px;
+    object-fit: cover;
+    left: 18px;
+    top: 24px;
+}
+
+.carousel-caption{
+    text-align: left;
+    width: 600px;
+    top: 35%;
+    height: fit-content;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.carousel-caption h5{
+    font-size: 5.25rem;
+}
+
+.card-img-top{
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+
+
+.h1{
+    margin: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.header{
+    background-image: url('../images/italy\ pizza.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    overflow: hidden;
+    background-color: black;
+    font-size: 77px;
+    
+}
+
+button{
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 3px 25px;
+    border-radius: 6px;
+}
+
+button:hover{
+    background: black;
+    color: white;
+}
+
+@media (max-width: 768px){
+    .container{
+        top: 124px;
+        left: 50%;
+        padding-right: var(--bs-gutter-x,-0.25rem);
+        padding-left: var(--bs-gutter-x,-0.25rem);
+    }
+    
+}
+  
